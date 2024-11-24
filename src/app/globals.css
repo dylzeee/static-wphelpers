@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add global styles */
+:root {
+  --trustworthyBlue: #003366;
+  --professionalGray: #F2F2F2;
+  --lightBlue: #4DA8DA;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.home-features .feature button {
+  background-color: white;
+  color: var(--trustworthyBlue);
+  border: 1px solid var(--trustworthyBlue);
+}
+
+.gradient-bg {
+  background: linear-gradient(270deg, #003366, #66ccff);
+  background-size: 400% 400%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes wave-move {
+  0% {
+    d: path("M0,320L48,293.3C96,267,192,213,288,202.7C384,192,480,224,576,240C672,256,768,256,864,213.3C960,171,1056,85,1152,80C1248,75,1344,149,1392,186.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      );
+  }
+
+  50% {
+    d: path("M0,300L48,283.3C96,267,192,213,288,202.7C384,192,480,224,576,240C672,256,768,230,864,195.3C960,171,1056,125,1152,120C1248,115,1344,149,1392,186.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      );
+  }
+
+  100% {
+    d: path("M0,320L48,293.3C96,267,192,213,288,202.7C384,192,480,224,576,240C672,256,768,256,864,213.3C960,171,1056,85,1152,80C1248,75,1344,149,1392,186.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      );
+  }
+}
+
+.wave-shadow {
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.1));
+}

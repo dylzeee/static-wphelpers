@@ -1,0 +1,23 @@
+/app
+  layout.js       // Root layout for the app
+  page.js         // Home page
+  about/page.js   // About Us page
+  services/page.js// Services page
+  contact/page.js // Contact Us page
+  pricing/page.js // Pricing page
+/components
+  Navbar.js       // Navbar component
+  Footer.js       // Footer component
+  Hero.js         // Hero section
+  ServiceCards.js // Service cards
+  ContactForm.js  // Contact form
+  PricingTable.js // Pricing table
+  Testimonials.js // Testimonials section
+/styles
+  globals.css     // Tailwind global styles
+
+
+Keeping the same approach and Keep combining bold typography, clean component designs, and interactivity to create a modern, professional feel that’s responsive, visually appealing, and aligns well with my brand’s goals, let's update the about page. Continue to borrowing components and inspiration from the websites previously mentioned.
+
+
+Thanks. Continue drawing inspiration from these sites and the different components and keeping things modern, professional, and visually appealing, combining bold typography, clean layouts, and interactive elements. Create a blog page that shows the latest posts and articles. I'll trust you with the design.
