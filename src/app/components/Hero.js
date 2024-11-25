@@ -4,7 +4,7 @@ export default function Hero({ title, subtitle, button, buttonLink, image, gradi
 
 
     if (gradientDirection = 'ltr') {
-        gradientDirection = 'bg-gradient-to-r from-lightBlue to-trustworthyBlue';
+        gradientDirection = 'bg-gradient-to-r from-trustworthyBlue to-lightBlue';
     } else {
         gradientDirection = 'bg-gradient-to-r from-trustworthyBlue to-lightBlue';
     }

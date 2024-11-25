@@ -6,7 +6,7 @@ const features = [
         title: 'WordPress Site Management',
         description: "Don’t let your website become a time-consuming burden. With our expert WordPress site management, you can reclaim your valuable time and focus on what truly matters: growing your business. Our team of skilled professionals will handle every aspect of your website, from routine maintenance to complex updates. Experience the peace of mind that comes with knowing your website is in the hands of experts.",
         image: '/website-maintenance.png',
-        link: '/services/website-maintenance',
+        link: '/services/wordpress-maintenance',
     },
     {
         title: 'Web Development',

@@ -8,7 +8,11 @@ export default function Navbar() {
             <div className="container mx-auto flex justify-between items-center py-4 px-6">
                 {/* Logo */}
                 <Link href="/" className="text-2xl font-bold text-trustworthyBlue">
-                    WP Helpers
+                    <img
+                        src="/sitelogo.png"
+                        alt="Site Logo"
+                        className="site-logo"
+                    />
                 </Link>
                 {/* Navigation Links */}
                 <div className="hidden md:flex space-x-8">
@@ -17,9 +21,6 @@ export default function Navbar() {
                     </Link>
                     <Link href="/services" className="hover:text-lightBlue">
                         Services
-                    </Link>
-                    <Link href="/resources" className="hover:text-lightBlue">
-                        Resources
                     </Link>
                     <Link href="/about" className="hover:text-lightBlue">
                         About

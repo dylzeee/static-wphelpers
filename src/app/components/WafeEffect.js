@@ -1,7 +1,7 @@
 export default function WaveEffect(props) {
     return (
         <div className="relative">
-            <div className="absolute inset-x-0 bottom-0">
+            <div className="absolute inset-x-0 lg:inset-x-[-80px] bottom-0 lg:bottom-[-40px]">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 1440 320"

@@ -1,21 +1,21 @@
 const pricingPlans = [
     {
-        name: 'Basic',
-        price: '$49/month',
-        description: 'Essential tools for individuals and startups.',
+        name: 'One-Time Task',
+        price: '$99/hr',
+        description: 'For individual jobs',
         features: ['Website Maintenance', 'Basic Support'],
         popular: false,
     },
     {
-        name: 'Pro',
-        price: '$99/month',
+        name: 'Business',
+        price: '$199/month',
         description: 'Perfect for growing businesses.',
         features: ['Advanced Maintenance', 'Priority Support', 'Secure Hosting'],
         popular: true,
     },
     {
-        name: 'Premium',
-        price: '$199/month',
+        name: 'Enterprise',
+        price: '$499/month',
         description: 'Full support for enterprises.',
         features: ['Custom Development', '24/7 Support', 'Performance Monitoring'],
         popular: false,
@@ -31,8 +31,8 @@ export default function PricingTable() {
                         <div
                             key={index}
                             className={`p-8 rounded-lg shadow-lg ${plan.popular
-                                    ? 'border-2 border-lightBlue bg-gradient-to-b from-lightBlue/10 to-white'
-                                    : 'bg-white'
+                                ? 'border-2 border-lightBlue bg-gradient-to-b from-lightBlue/10 to-white'
+                                : 'bg-white'
                                 }`}
                         >
                             {plan.popular && (
@@ -53,8 +53,8 @@ export default function PricingTable() {
                             </ul>
                             <button
                                 className={`mt-6 w-full py-3 rounded-lg text-white font-medium ${plan.popular
-                                        ? 'bg-lightBlue hover:bg-blue-500'
-                                        : 'bg-trustworthyBlue hover:bg-blue-700'
+                                    ? 'bg-lightBlue hover:bg-blue-500'
+                                    : 'bg-trustworthyBlue hover:bg-blue-700'
                                     }`}
                             >
                                 Choose Plan

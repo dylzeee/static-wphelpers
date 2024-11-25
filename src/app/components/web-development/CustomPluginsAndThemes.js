@@ -18,7 +18,7 @@ export default function CustomPluginsAndThemes() {
     ];
 
     return (
-        <section className="py-16 bg-gray-50">
+        <section className="py-16 bg-gray-50 pb-36">
             <div className="max-w-7xl mx-auto px-6 space-y-12">
                 {/* Header */}
                 <div className="text-center">
