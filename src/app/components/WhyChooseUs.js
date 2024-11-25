@@ -1,63 +1,63 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeadset, faCogs, faShieldAlt } from '@fortawesome/free-solid-svg-icons';
+import { faBrush, faRocket, faRedoAlt } from '@fortawesome/free-solid-svg-icons';
 
 export default function WhyChooseUs() {
-    const benefits = [
+    const features = [
         {
-            title: '24/7 Support',
+            title: 'Custom Design, Built for You',
             description:
-                'Round-the-clock assistance, whenever you need it.',
-            icon: faHeadset,
+                'Every website we create is tailored to your brand, ensuring it’s not just beautiful but built to achieve your goals.',
+            icon: faBrush,
         },
         {
-            title: 'Deep Understanding',
+            title: 'Performance That Converts',
             description:
-                'In-depth knowledge of your business and industry.',
-            icon: faCogs,
+                'Speed, functionality, and mobile optimization come standard, so your site not only looks amazing but performs flawlessly.',
+            icon: faRocket,
         },
         {
-            title: 'Tailored Straregies',
+            title: 'Enhance or Start Anew',
             description:
-                'Custom solutions to meet your specific goals.',
-            icon: faShieldAlt,
+                'Whether you need a completely new site or upgrades to your existing one, we’re here to bring your vision to life.',
+            icon: faRedoAlt,
         },
     ];
 
     return (
-        <section className="py-24 bg-gray-50">
-            <div className="max-w-7xl mx-auto px-6 text-center">
-                <h2 className="text-4xl font-bold text-trustworthyBlue">
-                    Your Website, Your Vision, Our Expertise.
-                </h2>
-                <p className="mt-4 text-lg text-gray-600 lg:max-w-4xl lg:mx-auto">
-                    We're not just a service provider; we're your dedicated partner. Our team of digital experts understands your unique needs and goals. We're committed to delivering personalized solutions that drive results.
-                </p>
-                <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {benefits.map((benefit, index) => (
-                        <div
-                            key={index}
-                            className="bg-white shadow-lg rounded-lg p-6 text-center hover:shadow-xl transition-shadow"
-                        >
-                            <div className="flex justify-center items-center w-16 h-16 mx-auto mb-6 bg-lightBlue/10 rounded-full">
+        <section className="py-16 bg-white py-16 bg-gradient-to-r from-gray-50 to-gray-100">
+            <div className="lg:py-24 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                {/* Left Column: Heading and Supporting Text */}
+                <div>
+                    <h2 className="text-4xl font-bold text-trustworthyBlue mb-6">
+                        Why Choose Us?
+                    </h2>
+                    <p className="text-gray-600 text-lg">
+                        Your website should be more than just a digital presence—it should
+                        be a growth engine for your business. Here’s why businesses like
+                        yours trust us to bring their vision to life.
+                    </p>
+                </div>
+
+                {/* Right Column: Features List */}
+                <div className="space-y-8">
+                    {features.map((feature, index) => (
+                        <div key={index} className="flex items-start gap-4">
+                            {/* Icon */}
+                            <div className="feature-item w-12 h-12 bg-lightBlue/10 rounded-full flex justify-center items-center">
                                 <FontAwesomeIcon
-                                    icon={benefit.icon}
-                                    className="w-8 h-8 text-lightBlue"
+                                    icon={feature.icon}
+                                    className="text-lightBlue w-6 h-6"
                                 />
                             </div>
-                            <h3 className="text-xl font-semibold text-trustworthyBlue">
-                                {benefit.title}
-                            </h3>
-                            <p className="mt-4 text-gray-600">{benefit.description}</p>
+                            {/* Content */}
+                            <div>
+                                <h3 className="text-xl font-semibold text-trustworthyBlue">
+                                    {feature.title}
+                                </h3>
+                                <p className="text-gray-600">{feature.description}</p>
+                            </div>
                         </div>
                     ))}
-                </div>
-                <div className="mt-12">
-                    <a
-                        href="/services"
-                        className="bg-lightBlue text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-500"
-                    >
-                        Learn More About Our Services
-                    </a>
                 </div>
             </div>
         </section>
